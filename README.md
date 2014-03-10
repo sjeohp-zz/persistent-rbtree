@@ -7,12 +7,12 @@ http://bartoszmilewski.com/2013/11/13/functional-data-structures-in-c-lists/
 I use the persistent list for the contents of the red-black tree, so it can hold more than one item per value.
 
 The red-black tree described there has no remove methods, so I added them. 
-This required:
-  methods for replacing the contents of a node with its min or max child
-  additional temporary colours: negative_black and double_black for coping with removed nodes
-  rewritten balance function
-  bubble function for eliminating negative/double_black
+This required: 
+  methods for replacing the contents of a node with its min or max child;
+  additional temporary colours: negative-black and double-black for coping with removed nodes;
+  rewritten balance function;
+  bubble function for eliminating negative/double-black.
 
 I also added:
-remove method to list
-size method to list, using foldr and a lambda function
+remove method to list;
+size method to list, using foldr and a lambda function.
